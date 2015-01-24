@@ -94,7 +94,7 @@ void remove(doubly_linked_list *dl) {
 void removeAtIndex(doubly_linked_list *dl, int index) {
     int counter = 0;
 
-    if (index > (dl->size - 1) / 2) {
+    if (index >= dl->size / 2) {
         int indexFromTail = dl->size - index - 1;
         
         node *curr = dl->tail;
