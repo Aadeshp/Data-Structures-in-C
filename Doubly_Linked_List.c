@@ -44,7 +44,6 @@ void add(doubly_linked_list *dl, int value) {
         while (curr->next != NULL)
             cur = cur->next;
 
-        //1 2 3 4 5 6
         curr->next = temp;
         curr->next->prev = curr;
         dl->tail = curr->next;
